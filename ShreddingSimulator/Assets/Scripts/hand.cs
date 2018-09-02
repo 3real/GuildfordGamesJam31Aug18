@@ -14,7 +14,9 @@ public float speed = 1f;
 	
 	void FireButterfly () {
     Rigidbody butterflyClone = Instantiate(Butterfly, transform.position, transform.rotation).GetComponent<Rigidbody>();
-	butterflyClone.transform.Translate(0.0f, 0.0f, 0.0f);
+	butterflyClone.transform.Translate(0.4f, 1.0f, 1.0f);
+	butterflyClone.transform.Rotate(90,0,0);
+	butterflyClone.AddForce(0,10,0);
 	}
 	void Update () {
 		

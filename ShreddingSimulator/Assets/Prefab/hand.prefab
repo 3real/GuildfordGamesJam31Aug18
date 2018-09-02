@@ -127,4 +127,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   Paper: {fileID: 1695573394406892}
-  Butterfly: {fileID: 1824441566938906, guid: fee634237a3d54bb5adad82cda7540be, type: 2}
+  Butterfly: {fileID: 1842641247953430, guid: fee634237a3d54bb5adad82cda7540be, type: 2}
