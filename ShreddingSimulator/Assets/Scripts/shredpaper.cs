@@ -6,11 +6,18 @@ public class shredpaper : MonoBehaviour {
 
 public float speed = 1f;
 	public GameObject Paper;
+	public GameObject Confetti;
 	private Rigidbody myRigidbody;
 	void Start () {
 		myRigidbody = GetComponent<Rigidbody> ();
 	}
 	
+	void FireConfetti () {
+    Rigidbody confettiClone = Instantiate(Confetti, transform.position, transform.rotation).GetComponent<Rigidbody>();
+	confettiClone.transform.Translate(-0.3f, 0.3f, 1.0f);
+	//paperClone.transform.position = new Vector3(0,0,0);
+	//paperClone.transform.rotation(0,90,0);
+}
 	
 	void Update () {
 		
@@ -23,6 +30,7 @@ public float speed = 1f;
 
 	if (transform.position.y < 1) 
 		{
+			FireConfetti();
 			Destroy(gameObject);
 		}
 	}
