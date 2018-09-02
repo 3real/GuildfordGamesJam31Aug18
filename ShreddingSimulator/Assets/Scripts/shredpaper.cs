@@ -7,6 +7,7 @@ public class shredpaper : MonoBehaviour {
 public float speed = 1f;
 	public GameObject Paper;
 	public GameObject Confetti;
+
 	private Rigidbody myRigidbody;
 	void Start () {
 		myRigidbody = GetComponent<Rigidbody> ();
@@ -29,6 +30,7 @@ public float speed = 1f;
 	if (transform.position.y < 1) 
 		{
 			FireConfetti();
+			
 			Destroy(gameObject);
 		}
 	}

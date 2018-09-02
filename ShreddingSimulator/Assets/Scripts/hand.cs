@@ -7,9 +7,14 @@ public class hand : MonoBehaviour {
 public float speed = 1f;
 	public GameObject Paper;
 	public GameObject Butterfly;
+	public AudioClip rip;
+    AudioSource audioSource;
 	private Rigidbody myRigidbody;
+
+	bool soundCanPlay = true;
 	void Start () {
 		myRigidbody = GetComponent<Rigidbody> ();
+		audioSource = GetComponent<AudioSource>();
 	}
 	
 	void FireButterfly () {
@@ -31,6 +36,16 @@ public float speed = 1f;
 		{
 			FireButterfly();
 			Destroy(this.gameObject);
+		}
+	
+	if (transform.position.y < 2.2 && soundCanPlay == true) 
+		{
+			audioSource.PlayOneShot(rip, 2.0F);
+			soundCanPlay = false;
+		}
+	if (transform.position.y >2.2) 
+		{
+			soundCanPlay = true;
 		}
 	}
 	
