@@ -14,7 +14,9 @@ public class lowerPaper : MonoBehaviour {
 
 void FirePaper () {
     Rigidbody paperClone = Instantiate(Paper, transform.position, transform.rotation).GetComponent<Rigidbody>();
-
+	paperClone.transform.Translate(-0.3f, 0.3f, 1.0f);
+	//paperClone.transform.position = new Vector3(0,0,0);
+	//paperClone.transform.rotation(0,90,0);
 }
 
 // Calls the fire method when holding down ctrl or mouse

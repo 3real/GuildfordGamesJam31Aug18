@@ -20,6 +20,11 @@ public float speed = 1f;
 	//}
 	float h = speed * Input.GetAxis("Vertical");
 	myRigidbody.velocity = new Vector3 (0,h,0);
+
+	if (transform.position.y < 1) 
+		{
+			Destroy(gameObject);
+		}
 	}
 	
 }

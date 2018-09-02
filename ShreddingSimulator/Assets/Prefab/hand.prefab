@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33065675359274824}
   - component: {fileID: 23166549184061550}
   - component: {fileID: 114511050626317854}
+  - component: {fileID: 114059557527198742}
   m_Layer: 0
   m_Name: hand
   m_TagString: Untagged
@@ -84,6 +85,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1695573394406892}
   m_Mesh: {fileID: 4300000, guid: 456331a371f6f4eedbc48b95765d12ef, type: 3}
+--- !u!114 &114059557527198742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1695573394406892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a9ea0e78bab4422eba5c9757e644ab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  Paper: {fileID: 1494298461949724, guid: a33969e3072d64bdf9d7938a719b6b52, type: 2}
 --- !u!114 &114511050626317854
 MonoBehaviour:
   m_ObjectHideFlags: 1
