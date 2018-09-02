@@ -14,10 +14,8 @@ public float speed = 1f;
 	
 	void FireConfetti () {
     Rigidbody confettiClone = Instantiate(Confetti, transform.position, transform.rotation).GetComponent<Rigidbody>();
-	confettiClone.transform.Translate(-0.3f, 0.3f, 1.0f);
-	//paperClone.transform.position = new Vector3(0,0,0);
-	//paperClone.transform.rotation(0,90,0);
-}
+	confettiClone.transform.Translate(0.0f, 0.0f, 0.0f);
+	}
 	
 	void Update () {
 		
